@@ -31,11 +31,12 @@ const CustomNavbar = () => {
             <div>
             <ul className='flex space-x-5'>
                     <li>
-                        <a href="#!">Login</a>
+                    <Link href={"/login"} className='hover:text-blue-200'>Login</Link>
+                
                     </li>
                 
                     <li>
-                        <a href="#!">Signup</a>
+                        <Link href={"/signup"} className='hover:text-blue-200'>Signup</Link>
                     </li>
                 </ul>
             </div>

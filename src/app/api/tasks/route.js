@@ -32,7 +32,7 @@ export async function POST(req) {
     const task = new Task({ title, content , userId });
     const newTask = await task.save();
     return NextResponse.json(newTask, {
-      status: 201,
+      status: 201
     });
   } catch (err) {
     return NextResponse.json({
